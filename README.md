@@ -53,6 +53,10 @@ rustup target add wasm32-unknown-unknown
 
 ## Query Engine Demo
 
+The local [`query-engine`](./rust/query-engine/src/lib.rs) crate demonstrates how to run simple `INSERT` / `SELECT` queries against an arbitrary database via WebAssembly.
+
+See [live demo](https://eurorust-2023.jkomyno.workers.dev).
+
 ### How to setup
 
 **Locally**:
@@ -95,7 +99,7 @@ rustup target add wasm32-unknown-unknown
   ```sh
   pnpm run deploy
   ```
-- Open the URL that follows `Published eurorust-2023` in the terminal window (e.g., `https://eurorust-2023.jkomyno.workers.dev`), and follow the instructions therein.
+- Open the URL that follows `Published eurorust-2023` in the terminal window (e.g., https://eurorust-2023.jkomyno.workers.dev), and follow the instructions therein.
 
 ## Demos
 
