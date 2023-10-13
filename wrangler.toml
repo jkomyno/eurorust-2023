@@ -1,0 +1,11 @@
+name = "eurorust-2023"
+main = "src/worker.ts"
+compatibility_date = "2023-10-12"
+
+node_compat = true
+# compatibility_flags = [ "nodejs_compat" ]
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "eurorust-2023"
+database_id = "992a2330-b184-401d-b77e-6370914573be"

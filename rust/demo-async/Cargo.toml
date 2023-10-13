@@ -1,0 +1,18 @@
+[package]
+name = "demo-async"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# build a C-style shared library that can be dynamically loaded by a JavaScript runtime
+crate-type = ["cdylib"]
+name = "demo_async"
+
+[dependencies]
+once_cell = "1.18.0"
+serde = { workspace = true }
+tokio = { version = "1.33", features = ["macros", "sync", "rt"] }
+wasm-bindgen = { workspace = true }
+wasm-bindgen-futures = { workspace = true }

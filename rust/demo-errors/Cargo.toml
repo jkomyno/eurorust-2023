@@ -1,0 +1,17 @@
+[package]
+name = "demo-errors"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# build a C-style shared library that can be dynamically loaded by a JavaScript runtime
+crate-type = ["cdylib"]
+name = "demo_errors"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+tsify = { workspace = true }
+wasm-bindgen = { workspace = true }

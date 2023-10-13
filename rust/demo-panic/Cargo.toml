@@ -1,0 +1,14 @@
+[package]
+name = "demo-panic"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# build a C-style shared library that can be dynamically loaded by a JavaScript runtime
+crate-type = ["cdylib"]
+name = "demo_panic"
+
+[dependencies]
+wasm-bindgen = { workspace = true }

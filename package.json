@@ -1,0 +1,29 @@
+{
+  "name": "@jkomyno/eurorust-2023",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev",
+    "test": "vitest run",
+    "node": "node --loader tsx/esm --experimental-wasm-modules"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230717.1",
+    "@types/node": "^20.4.2",
+    "itty-router": "^4.0.14",
+    "tsx": "^3.13.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.11",
+    "vite-plugin-wasm": "^3.2.2",
+    "wrangler": "^3.3.0"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.6.0",
+    "@prisma/adapter-neon": "^5.4.1",
+    "@prisma/driver-adapter-utils": "^5.4.1",
+    "@prisma/query-engine-wasm": "0.0.5",
+    "vitest": "^0.32.4"
+  }
+}
